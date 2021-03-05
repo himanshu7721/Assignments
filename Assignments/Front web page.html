@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body
+{
+margin:0;
+padding:0;
+}
+
+ul
+{
+list-style-type:none;
+background-color:#726969;
+margin:0;
+padding:0;
+overflow:hidden;
+
+}
+li
+{
+float:left;
+}
+li a
+{
+display:block;
+
+padding:12px 18px;;
+color:white;
+text-decoration:none;
+text-align:center;
+}
+li a:hover
+{
+background-color:#dad7d7;
+color:black;
+}
+.righst
+{
+background-color:red;
+
+}
+.demo
+{
+background-image:url("https://images.unsplash.com/photo-1600307152629-ac0c275fbd50?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fGhvdGVsc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+background-position:center;
+position:relative;
+background-size:cover;
+height: 600px;
+}
+.container
+{
+display: flex;
+
+}
+
+.flipcard {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  padding:10px 13px;
+}
+
+.flipinner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  }
+
+.flipcard:hover .flipinner {
+  transform: rotateY(180deg);
+}
+
+.flipfront, .flipback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flipfront {
+  background-color:#008080;
+  color: black;
+}
+
+.flipback {
+  background-color:#008080;
+  color: white;
+  transform: rotateY(180deg);
+  
+}
+
+
+</style>
+</head>
+<body>
+<h1 text align="center">Front WebPage</h1>
+<header>
+<ul>
+<li><a href="#home"><i class="fa fa+-fw fa-home"></i> Home</a></li>
+<li><a href="#about">&#x2139; About</a></li>
+<li><a href="#contact">&#x260E; Contact</a></li>
+<li style="float:right"><a class="righst" href="#help">Help</a></li>
+</ul>
+</header>
+<div class="demo">
+</div>
+<h2 text align="center">Hotels With Ratings &#x2605;</h2>
+<div class="container">
+
+<div class="flipcard">
+  <div class="flipinner">
+    <div class="flipfront">
+      <img src="https://images.unsplash.com/photo-1454388683759-ee76c15fee26?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWxzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"style="width:300px;height:200px;">
+    </div>
+    <div class="flipback" style="display:flex">
+       <h1>&#x2605;</h1> 
+      <h1>&#x2605;</h1> 
+      <h1>&#x2605;</h1> 
+      <h1>&#x2605;</h1> 
+    </div>
+  </div>
+</div>
+
+<div class="flipcard">
+  <div class="flipinner">
+    <div class="flipfront">
+      <img src="https://images.unsplash.com/photo-1524932563317-9962c267d8bd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8aG90ZWxzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width:300px;height:200px;">
+    </div>
+    <div class="flipback" style="display:flex">
+      <h1>&#x2605;</h1> 
+      <h1>&#x2605;</h1> 
+      <h1>&#x2605;</h1> 
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="flipcard">
+  <div class="flipinner">
+    <div class="flipfront">
+      <img src="https://images.unsplash.com/photo-1544477597-7e30412ada8c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdGVsc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width:300px;height:200px;">
+    </div>
+    <div class="flipback" style="display:flex">
+      <h1>&#x2605;</h1> 
+      <h1>&#x2605;</h1> 
+      <h1>&#x2605;</h1> 
+      <h1>&#x2605;</h1>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="flipcard">
+  <div class="flipinner">
+    <div class="flipfront">
+      <img src="https://images.unsplash.com/photo-1579273142152-e1398f51c7be?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGhvdGVsc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width:300px;height:200px;">
+    </div>
+    <div class="flipback" style="display:flex">
+      <h1>&#x2605;</h1> 
+      <h1>&#x2605;</h1> 
+      <h1>&#x2605;</h1>
+      <h1>&#x2605;</h1>
+      <h1>&#x2605;</h1>
+      
+      
+    </div>
+  </div>
+</div>
+
+
+</div>
+<footer>
+<h4 text align="center">It's easy to customize your travel experience with our robust flight and hotel search filter options and Tour.com travel tools like flight fare alerts, deal-finder calendar, and early bird deals. Trip.com''s secure payment system takes the stress out of travel by providing easy payment options, including credit and debit cards, and UnionPay.</h4>
+</footer>
+</body>
+
+</html>
